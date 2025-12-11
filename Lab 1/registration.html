@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Portal | Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card register-card">
+            <h2>Student Registration</h2>
+            <p class="subtitle">Enter your details below</p>
+            
+            <form id="regForm">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" placeholder="Enter your name">
+                </div>
+
+                <div class="form-group">
+                    <label for="regNo">Registration No.</label>
+                    <input type="text" id="regNo" placeholder="e.g., 23BCEXXXX">
+                    <small>9-10 Characters (Letters & Numbers)</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email ID</label>
+                    <input type="email" id="email" placeholder="name.regNo@vitap.ac.in">
+                </div>
+
+                <div class="form-group">
+                    <label for="mobile">Mobile No.</label>
+                    <input type="text" id="mobile" placeholder="Enter your 10 digit mobile number">
+                </div>
+
+                <button type="submit" class="btn submit-btn">Submit</button>
+            </form>
+            
+            <p id="uiMessage" class="ui-message"></p>
+            <div class="links">
+                <a href="index.html">Back to Home</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
