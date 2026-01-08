@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Multimedia Practice</h1>
+
+    <div class="player-card">
+        <h2>🎵 Audio Player</h2>
+        <audio id="myAudio" controls>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        </audio>
+        <div class="timer-container">
+            <span class="timer-box">Time: <span id="audioTime">0:00</span></span>
+        </div>
+    </div>
+
+    <div class="player-card">
+        <h2>📺 Video Player</h2>
+        <video id="myVideo" controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        </video>
+        <div class="timer-container">
+            <span class="timer-box">Time: <span id="videoTime">0:00</span></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

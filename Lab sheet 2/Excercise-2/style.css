@@ -1,0 +1,37 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    max-width: 700px;
+    margin: 40px auto;
+    background-color: #f0f2f5;
+    text-align: center;
+}
+
+.player-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+}
+
+video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+audio {
+    width: 100%;
+}
+
+.timer-container {
+    margin-top: 15px;
+}
+
+.timer-box {
+    background: #2c3e50;
+    color: white;
+    padding: 6px 15px;
+    border-radius: 50px;
+    font-family: monospace;
+    font-size: 1.1rem;
+}
