@@ -1,0 +1,84 @@
+/* Page base */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6f8;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+/* Form container */
+#registerForm {
+  background: #ffffff;
+  padding: 25px 30px;
+  width: 360px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Labels */
+#registerForm label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+/* Inputs & select */
+#registerForm input,
+#registerForm select {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 6px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* Focus state */
+#registerForm input:focus,
+#registerForm select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Validation states */
+.error {
+  border: 2px solid #dc3545 !important;
+}
+
+.success {
+  border: 2px solid #28a745 !important;
+}
+
+/* Error text */
+small {
+  display: block;
+  min-height: 14px;
+  color: #dc3545;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+/* Hidden section */
+.hidden {
+  display: none;
+}
+
+/* Button */
+#registerForm button {
+  width: 100%;
+  padding: 10px;
+  background: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Button hover */
+#registerForm button:hover {
+  background: #0056b3;
+}

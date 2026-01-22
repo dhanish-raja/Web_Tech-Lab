@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Multi-Stage Form Workflow</title>
+  <style>
+    .stage { display: none; }
+    .active { display: block; }
+    .error { color: red; font-size: 12px; }
+    .progress-container {
+      width: 100%;
+      background: #ddd;
+      height: 10px;
+      margin-bottom: 20px;
+    }
+    .progress-bar {
+      height: 10px;
+      width: 0%;
+      background: green;
+    }
+  </style>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<h2>Multi-Stage Form</h2>
+
+<div class="progress-container">
+  <div id="progressBar" class="progress-bar"></div>
+</div>
+
+<form id="multiForm">
+
+  <!-- Stage 1 -->
+  <div class="stage active" id="stage1">
+    <h3>Stage 1: Basic Info</h3>
+    <input type="text" id="name" placeholder="Name">
+    <div class="error" id="nameError"></div>
+    <button type="button" onclick="nextStage()">Next</button>
+  </div>
+
+  <!-- Stage 2 -->
+  <div class="stage" id="stage2">
+    <h3>Stage 2: Contact</h3>
+    <input type="email" id="email" placeholder="Email">
+    <div class="error" id="emailError"></div>
+    <button type="button" onclick="prevStage()">Back</button>
+    <button type="button" onclick="nextStage()">Next</button>
+  </div>
+
+  <!-- Stage 3 -->
+  <div class="stage" id="stage3">
+    <h3>Stage 3: Security</h3>
+    <input type="password" id="password" placeholder="Password">
+    <div class="error" id="passwordError"></div>
+    <button type="button" onclick="prevStage()">Back</button>
+    <button type="button" onclick="nextStage()">Next</button>
+  </div>
+
+  <!-- Stage 4 -->
+  <div class="stage" id="stage4">
+    <h3>Stage 4: Confirmation</h3>
+    <p>Review and submit</p>
+    <button type="button" onclick="prevStage()">Back</button>
+    <button type="submit">Submit</button>
+  </div>
+
+</form>
+
+<script src="workflow.js"></script>
+</body>
+</html>

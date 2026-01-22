@@ -1,0 +1,82 @@
+/* Page base */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6f8;
+  padding: 40px;
+}
+
+/* Heading */
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* Survey form container */
+#surveyForm {
+  max-width: 520px;
+  margin: 0 auto 20px auto;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Question block */
+.question {
+  margin-bottom: 18px;
+}
+
+/* Question label */
+.question label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+}
+
+/* Inputs */
+.question input[type="text"] {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Radio & checkbox spacing */
+.question input[type="radio"],
+.question input[type="checkbox"] {
+  margin-right: 6px;
+  margin-left: 10px;
+}
+
+/* Invalid input */
+.invalid {
+  border: 1.5px solid #dc3545 !important;
+}
+
+/* Error message */
+.error {
+  margin-top: 5px;
+  color: #dc3545;
+  font-size: 12px;
+  min-height: 14px;
+}
+
+/* Submit button */
+button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 18px;
+  background: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Button hover */
+button:hover {
+  background: #0056b3;
+}
