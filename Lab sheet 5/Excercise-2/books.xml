@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books>
+    <book>
+        <id>1</id>
+        <title>Clean Code</title>
+        <author>Robert C. Martin</author>
+        <status>Available</status>
+    </book>
+    <book>
+        <id>2</id>
+        <title>Introduction to Algorithms</title>
+        <author>CLRS</author>
+        <status>Not Available</status>
+    </book>
+</books>

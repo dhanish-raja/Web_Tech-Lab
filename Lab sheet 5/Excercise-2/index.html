@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Library Book Tracker (XML)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Library Book Tracker (XML)</h2>
+
+    <form id="bookForm">
+        <input type="text" id="bookId" placeholder="Book ID" required>
+        <input type="text" id="title" placeholder="Title" required>
+        <input type="text" id="author" placeholder="Author" required>
+        <select id="status">
+            <option value="Available">Available</option>
+            <option value="Not Available">Not Available</option>
+        </select>
+        <button type="submit">Add / Update</button>
+    </form>
+
+    <div id="message"></div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="bookTable"></tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
