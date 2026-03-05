@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Online Book Finder</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Online Book Finder</h1>
+
+
+<h2>Add Book</h2>
+
+<input id="titleAdd" placeholder="Title">
+<input id="authorAdd" placeholder="Author">
+<input id="categoryAdd" placeholder="Category">
+<input id="priceAdd" placeholder="Price">
+<input id="ratingAdd" placeholder="Rating">
+<input id="yearAdd" placeholder="Year">
+
+<button onclick="addBook()">Add Book</button>
+
+<hr>
+
+
+<h2>Search Books</h2>
+
+<input type="text" id="titleSearch" placeholder="Search by title">
+
+<button onclick="searchBook()">Search</button>
+
+
+<br><br>
+
+
+<select id="categoryFilter">
+
+<option value="Programming">Programming</option>
+<option value="Database">Database</option>
+<option value="Computer Science">Computer Science</option>
+
+</select>
+
+<button onclick="filterCategory()">Filter Category</button>
+
+
+<br><br>
+
+
+<button onclick="sortPrice()">Sort by Price</button>
+
+<button onclick="sortRating()">Sort by Rating</button>
+
+<button onclick="topBooks()">Top Rated</button>
+
+
+<br><br>
+
+<button onclick="loadMore()">Load More</button>
+
+
+<h2>Books</h2>
+
+<div id="books"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
